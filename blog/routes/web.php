@@ -14,14 +14,11 @@
 use Illuminate\Support\Facades\DB;
 
 Route::get('/', function () {
-    $posts = DB::table('posts')->get();
-    return view('home')->with('posts', $posts);
+    return view('home');
 });
 Route::get('/contact', function () {
-    $posts = DB::table('posts')->get();
-    return view('contact')->with('posts', $posts);
+    return view('contact');
 });
 Route::get('/about', function () {
-    $posts = DB::table('posts')->get();
-    return view('about')->with('posts', $posts);
+    return view('about');
 });
